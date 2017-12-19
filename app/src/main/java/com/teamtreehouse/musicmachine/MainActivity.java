@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     public static final String KEY_SONG = "song";
+    public static final String EXTRA_TITLE = "EXTRA_TITLE";
 
     private boolean mBound = false;
     private Button mDownloadButton;
@@ -98,7 +99,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void testIntents() {
+        // explicit intent
         Intent intent = new Intent(this, DetailActivity.class);
+        // pass data into intent
+        intent.putExtra(EXTRA_TITLE, "Gradle, Gradle, Gradle");
         startActivity(intent);
     }
 
