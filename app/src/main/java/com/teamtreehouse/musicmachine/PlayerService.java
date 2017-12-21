@@ -41,7 +41,7 @@ public class PlayerService extends Service {
                 REQUEST_OPEN, mainIntent, 0);
 
         Notification.Builder notificationBuilder = new Notification.Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.drawable.ic_queue_music_white)
                 .setContentTitle(title)
                 .setContentText(artist)
                 .setContentIntent(pendingIntent);
